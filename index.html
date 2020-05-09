@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Spiral Visualization</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/p5.min.js"></script>
+    <script src="js/spiral.js"></script>
+    <script src="js/home.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <span class="left">
+          <span class="stick">Number of Curves: <input style="width:50px" type="range" min="1" max="2" value="2" step="1" class="slider" id="curveNumbers" oninput="configChange()"><span class="val" id="curveNumbersValue">2</span> </span>
+          <span class="stick">Thickness: <input style="width:100px" type="range" min="1" max="10" value="2" step="1" class="slider" id="thickness" oninput="configChange()"><span class="val" id="thicknessValue">2</span> </span>
+          <span class="stick">In-between angles: <input style="max-width:300px" type="range" min="1" max="360" value="30" step="1" class="slider" id="angleIncrement" oninput="configChange()"><span class="val" id="angleIncrementValue">30</span></span>
+        </span>
+        <span class="credit">By Murlidhar Varma</span>
+    </div>
+    <div id="canvas-container">
+
+    </div>
+</body>
+</html>
